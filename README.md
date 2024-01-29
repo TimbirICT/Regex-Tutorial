@@ -1,10 +1,13 @@
 # Using URL's with Regular Expressions
 
-This tutorial will show you how to use and implement URL's with regular expressions.
+This tutorial will show you how to use and implement URL's with regular expressions. Regex is a very useful way to match patterns to text, which can help you by identifying 
+and extracting URL's from a given source.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+For this tutorial, we'll be looking at a pattern used for extracting URL's. 
+Here is what this pattern looks like: '/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/'
+This line of code will help identify what to look for in expression form. In this case, it will look for and identify URL's.
 
 ## Table of Contents
 
@@ -23,12 +26,26 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+Anchors act as an indicator for where text starts, and ends in the expression. 
+
+In this pattern, '^' is called a ''. It acts as an identifier for '', 
+which is a c
 
 ### Quantifiers
+Quantifiers are used to specify the number of occurrences of a character, or group. 
+In our example, we use the quantifier '*' to indicate that the expression allows
+for zero or more occurrences of the characters within the square brackets. 
+
 
 ### OR Operator
+The OR Operator allows the pattern to match with 'http', 'https', or 'ftp'.
+
+In this expression, the OR operator we used is the '|' symbol. 
 
 ### Character Classes
+Character classes are represented by square brackets, and help match a character from a character set.
+In our expression, we use
+
 
 ### Flags
 
