@@ -53,21 +53,31 @@ In this expression, the OR operator we used is the '|' symbol.
 Character classes (\d, \w) match symbols from character sets. In this URL regex, \d matches digits, and \w matches letters, digits, and underscores.
 
 ### Flags
-Regex flags, such as multiline (m) and global (g), impact the search. Multiline affects the use of ^ and $ anchors, while global returns all matches.
+Regex flags, such as multiline (m) and global (g), impact the search. Multiline affects the use of '^' and '$' anchors, while global returns all matches.
 
 ### Grouping and Capturing
 Grouping is achieved by wrapping portions in parentheses. Captured groups allow applying quantifiers and facilitate referencing specific parts.
 
 ### Bracket Expressions
+Bracket expressions ([...]) define sets of characters. Special characters within, like ^, ., or /, are escaped with a backslash () to match them literally.
 
 ### Greedy and Lazy Match
+Greedy matches (default) attempt to match as much as possible. Lazy matches, achieved by adding ?, match the shortest possible string. Greedy is usually preferred for URL regex to ensure comprehensive matching.
 
 ### Boundaries
 
 ### Back-references
+Back-references in regular expressions allow referencing and reusing previously captured groups within the expression. They are denoted by \1, \2, and so on, representing the first, second, and subsequent captured groups. However, in the provided URL regex, back-references are not explicitly utilized. Back-references become particularly useful when validating patterns with repeated structures, such as HTML tags.
 
 ### Look-ahead and Look-behind
+Look-ahead and look-behind assertions in regular expressions are used to assert that a certain pattern is (or is not) present ahead or behind the current matching position, without including it in the match itself. These assertions help refine pattern matching based on context.
+
+Look-ahead '((?=...)' and '(?!...))': Look-ahead assertions check if a pattern is ahead of the current position without consuming characters. For instance, (?=https) in the URL regex ensures that the URL starts with "http" or "https" without including it in the match.
+
+Look-behind '((?<=...)' and '(?<!...))': Look-behind assertions check if a pattern exists behind the current position without consuming characters. In the URL regex, look-behind is not explicitly used.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Timbir Middlebrooks is a student of Web Development with the University of Kansas' online coding bootcamp. To see more of his work visit his github profile at https://www.github.com/TimbirICT.
+
+You can also email him at tmiddlebrooks99@gmail.com
