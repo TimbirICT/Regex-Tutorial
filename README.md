@@ -28,13 +28,20 @@ This line of code will help identify what to look for in expression form. In thi
 ### Anchors
 Anchors act as an indicator for where text starts, and ends in the expression. 
 
-In this pattern, '^' is called a ''. It acts as an identifier for '', 
-which is a c
+In this pattern, '^' anchors the regex at the beginning of the string. '$' anchors the regex at the end of the string. 
+It acts as an identifier for a start and finish of a pattern.
+
+
 
 ### Quantifiers
 Quantifiers are used to specify the number of occurrences of a character, or group. 
+
 In our example, we use the quantifier '*' to indicate that the expression allows
 for zero or more occurrences of the characters within the square brackets. 
+
+Another quantifier used in our experession is '?'.
+'?' indicates that the expression allows for zero or one occurences as opposed to zero or more.
+In our expression, it indicates that the URL is allowed to have a trailing slash or not.
 
 
 ### OR Operator
