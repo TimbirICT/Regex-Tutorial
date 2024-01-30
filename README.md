@@ -50,13 +50,13 @@ The OR Operator allows the pattern to match with 'http', 'https', or 'ftp'.
 In this expression, the OR operator we used is the '|' symbol. 
 
 ### Character Classes
-Character classes are represented by square brackets, and help match a character from a character set.
-In our expression, we use
-
+Character classes (\d, \w) match symbols from character sets. In this URL regex, \d matches digits, and \w matches letters, digits, and underscores.
 
 ### Flags
+Regex flags, such as multiline (m) and global (g), impact the search. Multiline affects the use of ^ and $ anchors, while global returns all matches.
 
 ### Grouping and Capturing
+Grouping is achieved by wrapping portions in parentheses. Captured groups allow applying quantifiers and facilitate referencing specific parts.
 
 ### Bracket Expressions
 
